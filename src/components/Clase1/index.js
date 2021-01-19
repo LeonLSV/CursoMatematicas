@@ -217,6 +217,37 @@ const Clase1 = () => {
           Reconocer que estamos hablando de sumas en el mundo de los números
           reales. Y este caso habla de una relación númerica de logaritmo.
         </p>
+        <p>Elemento neutro de la suma.</p>
+        <p>
+          Dada una a que pertenece a los R se define el elemento neutro de la
+          suma de la siguiente forma:
+        </p>
+        <p>a + 0 = a</p>
+        <p>2 + 0 = 2</p>
+        <p>pi + 0 = pi</p>
+        <p>Elemento inverso de la suma.</p>
+        <p>
+          Para todo número b que pertenece a R, siempre existe un número -b
+          llamado inverso de la suma (opuesto) que genera su elemento neutro.
+        </p>
+        <p>b + (-b) = 0</p>
+        <p>1 + (-1) = 0</p>
+        <p>e + (-e) = 0</p>
+        <p>Propiedad Conmutativa de la suma</p>
+        <p>a + b = b + a; a y b pertenece a R</p>
+        <p>2 + 3 = 3 + 2 = 5</p>
+        <p>6 + (-2) = (-2) + 6 = 4</p>
+        <p>3 + (-10) = (-10) + 3 = -7</p>
+        <p>Propiedad Asociativa de la suma</p>
+        <p>(a+b) + c = a + (b+c); a, b, c pertenecen a R</p>
+        <p>(2+3) + 5 = 2 + (3+5) = 10</p>
+        <p>(5+4)+(-2) = 5 + (4+(-2)) = 7</p>
+        <p>(-6+3) + (-2) = -6 + (3+2) = 5</p>
+        <p>Bases, Multiplicación</p>
+        <p>2x3 = (2)(3) = 6; también = 2+2+2 = 3+3</p>
+        <p>(-2)(-3) = 6</p>
+        <p>(-2)(3) = -6</p>
+        <p>(2)(-3) = -6</p>
         <p></p>
       </ContainerClase1>
     </>
