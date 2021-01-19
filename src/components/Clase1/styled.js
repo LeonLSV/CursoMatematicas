@@ -9,18 +9,19 @@ export const ImgGriego = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 `;
 export const ImgRacional = styled.img`
-  width: 250px;
+  width: 270px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  padding: 20px;
 `;
 export const ImgRelacion = styled.img`
-  width: 400px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  padding: 20px;
 `;

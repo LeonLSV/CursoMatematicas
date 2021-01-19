@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import logo from "../../logo.svg";
+import cubo from "../../images/cubo.png";
 import { Tarjetas } from "../Tarjetas";
 
 import { LinkButton } from "./styled";
@@ -19,8 +19,8 @@ export const CardContainer = () => {
             <Tarjetas
               style={tarjeta}
               title="Clase 1"
-              description="Introducción"
-              image={logo}
+              description="Introducción - Números Reales y sus propiedades"
+              image={cubo}
             />
           </LinkButton>
           <LinkButton to="/clase2">
@@ -28,7 +28,7 @@ export const CardContainer = () => {
               style={tarjeta}
               title="Clase 2"
               description="Aritmetica"
-              image={logo}
+              image={cubo}
             />
           </LinkButton>
         </Col>

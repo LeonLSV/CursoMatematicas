@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "antd";
+import { Row, Col, Button } from "antd";
 import {
   RightOutlined,
   LeftOutlined,
@@ -8,11 +8,18 @@ import {
 } from "@ant-design/icons";
 
 import { ContainerClase1, ImgGriego, ImgRacional, ImgRelacion } from "./styled";
-import { ButtonBack, ButtonGlobal } from "../../StyleGlobal/styled";
+import { ButtonBack } from "../../StyleGlobal/styled";
 
 import griego from "../../images/griego.png";
 import racional from "../../images/racional.png";
 import relacion from "../../images/relacion.png";
+import cociente from "../../images/cociente.png";
+import periodica from "../../images/periodica.png";
+import porcentaje from "../../images/porcentaje.png";
+import formaperiodica from "../../images/formaperiodica.png";
+import irracionales from "../../images/irracionales.png";
+import propoperaciones from "../../images/propoperaciones.png";
+import orden from "../../images/orden.png";
 
 const Clase1 = () => {
   return (
@@ -21,11 +28,11 @@ const Clase1 = () => {
         justify="center"
         align="middle"
         style={{ display: "flex", justifyContent: "center" }}>
-        <ButtonGlobal>
-          <ButtonBack to="/">
-            <ArrowLeftOutlined /> Back
-          </ButtonBack>
-        </ButtonGlobal>
+        <ButtonBack to="/">
+          <Button type="primary" icon={<ArrowLeftOutlined />}>
+            Back
+          </Button>
+        </ButtonBack>
       </Row>
       <ContainerClase1>
         <h2>Definición (Diccionario RAE)</h2>
@@ -77,12 +84,20 @@ const Clase1 = () => {
         <p>
           <AimOutlined /> Menor que <LeftOutlined />
         </p>
+        <p>
+          <AimOutlined /> Tal que |
+        </p>
+        <p>
+          <AimOutlined /> Pertenece ∈
+        </p>
+        <p>
+          <AimOutlined /> Diferente ≠
+        </p>
         <h4>
           Igualdad = "Una igualdad matemática se manipula como los pesos de una
           balanza: para mantener el equilibrio, lo que agregamos o retiramos del
           lado derecho lo tenemos que agregar o retirar del lado izquierdo.
         </h4>
-
         <h3>Alfabeto Griego</h3>
         <p>
           Desarrollado alrededor del siglo IX a. C. a partir del alfabeto
@@ -117,11 +132,91 @@ const Clase1 = () => {
           Todos los números de la forma a/b donde a y b son números enteros y b
           ≠ 0.
         </p>
-        <ImgRacional alt="Q" src={racional} />
-        <ImgRelacion alt="Q" src={relacion} />
-        <h3>| Tal que</h3>
-        <h3>∈ Pertenece</h3>
-        <h3>≠ Diferente</h3>
+        <Row justify="center" align="middle">
+          <Col lg={8} sm={12} xs={24}>
+            <ImgRacional alt="Q" src={racional} />
+          </Col>
+          <Col lg={8} sm={12} xs={24}>
+            <ImgRelacion alt="Q" src={relacion} />
+          </Col>
+        </Row>
+        <Row justify="center" align="middle">
+          <Col span={24} style={{ textAlign: "center" }}>
+            <h3>Formas de representar los números racionales (Q).</h3>
+          </Col>
+          <Col lg={8} sm={10} xs={24}>
+            <ImgRelacion alt="Q" src={cociente} />
+          </Col>
+          <Col lg={8} sm={10} xs={24}>
+            <ImgRelacion alt="Q" src={periodica} />
+          </Col>
+          <Col lg={8} sm={10} xs={24}>
+            <ImgRelacion alt="Q" src={porcentaje} />
+          </Col>
+        </Row>
+        <Row justify="center" align="middle">
+          <Col lg={12} sm={16} xs={24} style={{ textAlign: "center" }}>
+            <h3>Llevar de forma periódica decimal a cociente de enteros.</h3>
+            <ImgRelacion alt="periodica" src={formaperiodica} />
+          </Col>
+        </Row>
+        <h4>Números Irracionales (R-Q)</h4>
+        <p>
+          Son todos los números que no pueden ser representados de la forma a/b,
+          donde a y b son números enteros y b ≠ 0.
+        </p>
+        <p>Número de Euler e = 2.718 281 828 459 ... </p>
+        <Col lg={14} sm={18} xs={24}>
+          <ImgRelacion alt="Q" src={irracionales} />
+        </Col>
+        <h3>
+          Números Reales (También lo podemos encontrar como Dominio: El dominio
+          de una función es el conjunto de objetos a los que la función asigna
+          valores.)
+        </h3>
+        <p>Números Naturales (N)</p>
+        <p>Números Enteros (Z)</p>
+        <p>Números Racionales (Q)</p>
+        <p>Números Irracionales (R-Q)</p>
+        <h3>El Decibel (dB) está en el conjunto de números Reales.</h3>
+        <h2>Propiedades de los números reales.</h2>
+        <p>Propiedades de igualdad.</p>
+        <p>x, y, z, pertenecen a los números reales.</p>
+        <p>Reflexiva x = x</p>
+        <p>Simetría x = y y por lo tanto x</p>
+        <p>Transitiva x = y; y = z por lo tanto x = z</p>
+        <h2>Propiedades de las operaciones.</h2>
+        <p>Sean a,b, y c números reales, entonces se cumple lo siguiente: </p>
+
+        <Col span={24}>
+          <ImgRelacion alt="Q" src={propoperaciones} />
+        </Col>
+
+        <h3>Orden de los números</h3>
+        <p>¿Qué número es mayor? a o b</p>
+        <p>
+          En la recta númerica el número que está a la derecha será el número
+          mayor, por lo tanto b es mayor que a, también podemos decir que a es
+          menor que b.
+        </p>
+        <Col lg={14} sm={18} xs={24}>
+          <ImgRelacion alt="Q" src={orden} />
+        </Col>
+        <h3>Bases, Suma</h3>
+        <p>2+3=5</p>
+        <p>2-3 = 2 + (-3) = -1; -3 es el opuesto de 3</p>
+        <p>
+          Dado un número a que pertenece a los R se define el opuesto de a como
+          -a por lo tanto el opuesto de -a es a
+        </p>
+        <p>
+          ¿Cuánto suman dos fuentes acústicas que están en fase si una genera
+          98dB SPL y la otra 94dB SPL
+        </p>
+        <p>
+          Reconocer que estamos hablando de sumas en el mundo de los números
+          reales. Y este caso habla de una relación númerica de logaritmo.
+        </p>
       </ContainerClase1>
     </>
   );

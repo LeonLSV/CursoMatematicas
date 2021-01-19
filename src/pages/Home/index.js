@@ -13,6 +13,7 @@ export const Home = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            textAlign: "center",
           }}>
           <h1>Apuntes de Matematicas</h1>
         </Col>
