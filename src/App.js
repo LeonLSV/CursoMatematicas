@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Row, Col } from "antd";
+import { Router } from "@reach/router";
+import { Home } from "./pages/Home";
+import { Main } from "./pages/Main";
+import Clase1 from "./components/Clase1";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home />
+      <Row justify="center" align="middle">
+        <Col span={24} style={{ display: "flex", justifyContent: "center" }}>
+          <Router>
+            <Main exact path="/" />
+            <Clase1 exact path="/clase1" />
+          </Router>
+        </Col>
+      </Row>
+    </>
   );
-}
+};
 
 export default App;
