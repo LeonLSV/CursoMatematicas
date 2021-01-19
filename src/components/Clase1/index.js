@@ -217,6 +217,7 @@ const Clase1 = () => {
           Reconocer que estamos hablando de sumas en el mundo de los números
           reales. Y este caso habla de una relación númerica de logaritmo.
         </p>
+        <p></p>
       </ContainerClase1>
     </>
   );
